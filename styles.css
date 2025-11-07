@@ -38,7 +38,7 @@ ol {
   margin-bottom: 32px;
 }
 
-.coffee-moments-gallery > *:not(:last-child) {
+.coffee-moments-gallery > :not(:last-child) {
   margin-bottom: 24px;
 }
 
@@ -65,12 +65,8 @@ ol {
     gap: 32px;
   }
 
-  .coffee-moments-gallery > *:not(:last-child) {
+  .coffee-moments-gallery > :not(:last-child) {
     margin-bottom: 0px;
-  }
-
-  .coffee-moments-gallery > *:not(:last-child) {
-    max-width: calc((100% - 32px * 1) / 2);
   }
 }
 
@@ -81,13 +77,10 @@ ol {
   }
 
   .coffee-moments-gallery {
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 32px;
 
+    width: 1312px;
     max-height: 948px;
   }
 }
