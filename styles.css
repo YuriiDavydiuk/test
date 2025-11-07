@@ -1,0 +1,86 @@
+.container.coffee-mometns-container {
+  max-width: 320px;
+  padding: 64px 16px;
+  margin: 0 auto;
+}
+.coffee-moments-title {
+  font-family: "Aboreto", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+
+  /* line-height: 43px; */
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #0b0803;
+  text-align: center;
+
+  margin-bottom: 24px;
+}
+
+.coffee-moments-subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+
+  /* line-height: 27px; */
+  line-height: 1.5;
+  text-align: center;
+  color: #0b0803;
+
+  margin-bottom: 32px;
+}
+
+.coffee-moments-gallery > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.gallery-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container.coffee-mometns-container {
+    max-width: 768px;
+     padding: 64px 32px;
+  }
+
+  .coffee-moments-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .coffee-moments-gallery > *:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
+  .coffee-moments-gallery > *:not(:last-child) {
+    max-width: calc((100% - 32px * 1) / 2);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container.coffee-mometns-container {
+    max-width: 1440px;
+    padding: 64px 64px;
+  }
+
+  .coffee-moments-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    max-height: 948px;
+  }
+}
